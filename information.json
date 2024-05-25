@@ -1,0 +1,15 @@
+{
+  "information": {
+    "brain": {
+      "0": "A brain is HIGHLY important for the organic body, because of it's nature and the use. The brain has neurons that each run certain actions of a condition is met. The brain also commands certain muscle to stretch, or certain organs to do things. This was an example, of course.\n\nThe brain may look very weird at first, but the shape defines how it works. The brain (like all organs) also needs blood to work. But if too much blood is put, this organ may leak/swell, or this organ might not be able to be used.\n\nThe organ's stats are listed below.\n\nName: Brain\nIs an organ: Yes
+Use: Working like a mind, controlling certain parts, etc.
+Is sensitive: VERY sensitive\nNeeds: Blood, oxygen, nutrients, and others not listed here\n\nFun facts: Alcohol can affect the neurons and decisions for this brain, making the brain badly modify-able.\n\nA brain looks like:\n",
+      "1": "[https://apanentgithub2024.github.io/wikipedia/img/brain.png]"
+    },
+    "lungs": {
+      "0": "The lungs are used to store in air or oxygen. They may look like just a pipe attached with two bags, but this organ is actually useful. This organ can be used to transmit air or oxygen to another organ if needed.\n\nLungs are very sensitive to chemicals or fogs (like smoke), because of the thin skin for the lungs. So if too much smoke is in the lungs, the smoke can even tear the skin apart, or cause the organ swelling.\n\nName: Lungs\nIs an organ: Yes (because the lungs are used for other things) and no (because this doesn't use blood)\nUse: Storing oxygen, storing air\nIs sensitive: Sensitive\nNeeds: Nutrients, vitamins\n\nLungs look like:",
+      "1": "[https://apanentgithub2024.github.io/wikipedia/img/lungs.png]"
+    }
+  },
+  "pages": ["brain", "lungs"]
+}
