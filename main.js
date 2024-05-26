@@ -72,7 +72,7 @@ const select = document.createElement("select")
 const option = document.createElement("option")
 select.appendChild(option)
 option.innerText = "Online articles will appear here"
-center.appendChild(select)
+center.appendChild(select);
 (async function() {
 	const onlineArticles = await new Promise(function(res, rej) {
 		fetch("information.json").then(async function(e) {
