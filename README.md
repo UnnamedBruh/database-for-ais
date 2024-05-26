@@ -1,6 +1,6 @@
 # WIKI
-
-**This Wikipedia repository can be forked using GitHub, but you can use this source if you like on the real website for this!**
+------
+**This Wikipedia repository can be forked using GitHub, but you can use this source if you like to make your wiki from this repository!**
 
 ### Can I use my own images?
 Yes, you can use your own images for your own forked copy of this Wikipedia.
