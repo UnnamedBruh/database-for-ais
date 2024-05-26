@@ -40,7 +40,7 @@ async function transitions(json, f) {
 								const br = document.createElement("div")
 								br.style.height = "1px"
 								document.body.appendChild(br)
-								element = document.createElement("p")
+								element = document.createElement("a")
 								document.body.appendChild(element)
 							} else if (e[index] === " ") {
 								element.innerText += e[index] + e[index + 1]
