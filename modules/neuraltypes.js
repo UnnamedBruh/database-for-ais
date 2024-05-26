@@ -15,9 +15,9 @@ const NeuralType = (function() {
           function isJSON(j) {
             try {
               JSON.parse(JSON.stringify(j))
-              return true
-            } catch {
               return false
+            } catch {
+              return true
             }
           }
           if (isJSON(rules)) {
