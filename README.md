@@ -6,7 +6,7 @@
 Yes, you can use your own images for your own forked copy of this Wikipedia.
 
 ### How do I get rid of the transitions?
-Go in the `main.js` file, then remove the `transitions()` function on the very last line of the code.
+Go in the `main.js` file, then go to line 115. You should see a comment that would tell you what to do to get rid of transitions.
 
 ### Can I use sources from other websites?
 Yes, you can use other sources in websites. Make sure to credit the sources though!
