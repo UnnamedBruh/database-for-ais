@@ -43,7 +43,7 @@ async function transitions(json, f) {
 							} else {
 								element.innerText += e[index]
 							}
-            	requestAnimationFrame(() => animateText(index + 1))
+            						requestAnimationFrame(() => animateText(index + 1))
 						} else {
 							resolve()
 						}
@@ -57,7 +57,7 @@ async function transitions(json, f) {
 		i++
 	}
 }
-
+setTimeout(function() {
 const center = document.createElement("center")
 document.body.appendChild(center)
 const p = document.createElement("p")
@@ -118,3 +118,4 @@ center.appendChild(select)
 		}
 	})
 })()
+}, 500)
