@@ -1,4 +1,4 @@
-const NeuralType = (function()
+const NeuralType = (function() {
   let json = {
     approximator: function(rules = {}) {
       // The Approximator is trained to return a chosen value based on the knowledge provided.
