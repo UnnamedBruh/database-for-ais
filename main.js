@@ -30,7 +30,7 @@ async function transitions(json, f) {
 				})
 			}
 		} else {
-			let element = document.createElement("p")
+			let element = document.createElement("a")
 			document.body.appendChild(element)
 			if (!f) {
 				await new Promise((resolve) => {
@@ -40,10 +40,12 @@ async function transitions(json, f) {
 								document.body.appendChild(document.createElement("br"))
 								element = document.createElement("p")
 								document.body.appendChild(element)
+							} else if (e[index] === " ") {
+								element.innerText += e[index] + e[index + 1]
 							} else {
 								element.innerText += e[index]
 							}
-            						requestAnimationFrame(() => animateText(index + 1))
+            						requestAnimationFrame(() => animateText(index + 1 + (e[index] === " " ? 1 : 0)))
 						} else {
 							resolve()
 						}
