@@ -1,1 +1,9 @@
-<body><script src="main.js"></script></body>
+<body><script>
+  (async function() {
+    fetch("main.js").then(async function(e) {
+      return await e.text()
+    }).then(function(e) {
+      eval(e)
+    })
+  })()
+</script></body>
