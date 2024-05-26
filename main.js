@@ -37,7 +37,9 @@ async function transitions(json, f) {
 					function animateText(index) {
 						if (index < e.length) {
 							if (e[index] === "\n") {
-								document.body.appendChild(document.createElement("br"))
+								const br = document.createElement("br")
+								br.style.height = "7px"
+								document.body.appendChild(br)
 								element = document.createElement("p")
 								document.body.appendChild(element)
 							} else if (e[index] === " ") {
