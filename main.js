@@ -93,14 +93,10 @@ center.appendChild(select);
 				input.remove()
 			}, 1000)
 			p.innerText = "Select an article to view it below"
-			onlineArticles.pages.filter(item => item.includes(event.target.value.toLowerCase())).forEach(function(item, i) {
-				if (i === 0) {
-					option.innerText = item
-				} else {
-					const option = document.createElement("option")
-					option.innerText = item
-					select.appendChild(option)
-				}
+			onlineArticles.pages.filter(item => item.includes(event.target.value.toLowerCase())).forEach(function(item) {
+				const option = document.createElement("option")
+				option.innerText = item
+				select.appendChild(option)
 			})
 			select.addEventListener("input", function(u) {
 				p.style.opacity = "1"
