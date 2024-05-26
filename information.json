@@ -7,7 +7,8 @@
     },
     "Creature parts: lungs": {
       "0": "The lungs are used to store in air or oxygen. They may look like just a pipe attached with two bags, but this organ is actually useful. This organ can be used to transmit air or oxygen to another organ if needed.\n\nLungs are very sensitive to chemicals or fogs (like smoke), because of the thin skin for the lungs. So if too much smoke is in the lungs, the smoke can even tear the skin apart, or cause the organ swelling.\n\nName: Lungs\nIs an organ: Yes (because the lungs are used for other things) and no (because this doesn't use blood)\nUse: Storing oxygen, storing air\nIs sensitive: Sensitive\nNeeds: Nutrients, vitamins\n\nLungs look like:",
-      "1": "[https://apanentgithub2024.github.io/wikipedia/img/lungs.png]"
+      "1": "[https://apanentgithub2024.github.io/wikipedia/img/lungs.png]",
+      "2": "Lungs from easyimages.net. Author is unknown.\n\nExtras\nThe lungs can even be affected by fluorine/fluoride, because the fluorine/fluoride can cause lung cancer when put inside lungs.\n\nLungs look like a small tube that is facing above with two bag-like parts with an indent on each lung. The lungs are normally red/persimmon/pink.\n\nLungs with lung cancer look like the one provided above, but with a darker color.\n\nEach lung is made to store in air and oxygen, assumably for keeping in breath.\n\nWhy you may see people panting is because they're not getting enough oxygen for the lungs."
     }
   },
   "pages": ["Creature parts: brain", "Creature parts: lungs"]
