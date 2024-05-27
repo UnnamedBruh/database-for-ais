@@ -1,6 +1,7 @@
 const Connect = {}
 Connect["Text"] = {}
 Connect["Text"]["en"] = {}
+Connect["Text"]["en"]["toolbox"] = {}
 Connect["Text"]["en"]["toolbox"]["OPERATORS"] = "Operators"
 Connect["Text"]["en"]["toolbox"]["DISPLAY"] = "Display"
 Connect["Text"]["en"]["toolbox"]["COMMENTS"] = "Comments"
