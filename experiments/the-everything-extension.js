@@ -13,7 +13,7 @@ if (!window["Scratch"]["Cast"]) {
 		const length = args.LENGTH
 		let result = ""
 		for (let i = 0; i < length; i++) {
-			result += charset[Math.floor(Math.random() * result.length)]
+			result += charset[Math.floor(Math.random() * charset.length)]
 		}
 		return result
 	}
@@ -67,7 +67,12 @@ if (!window["Scratch"]["Cast"]) {
 								defaultValue: "50"
 							}
 						}
-					}
+					},
+					{
+						opcode: "",
+						blockType: Scratch.BlockType.LABEL,
+						text: "Operators"
+					},
 				]
 			}
 		}
