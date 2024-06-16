@@ -1,4 +1,4 @@
-let HexadecimalColorError = class {
+class HexadecimalColorError extends Error {
 	constructor(m) {
 		return {
 			message: "Uncaught HexadecimalColorError: " + m
