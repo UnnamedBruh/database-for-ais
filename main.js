@@ -64,7 +64,7 @@ setTimeout(function() {
 const center = document.createElement("center")
 document.body.appendChild(center)
 const p = document.createElement("p")
-p.innerText = "Apanent167's Wikipedia"
+p.innerText = "UnnamedBruh's AI Database"
 center.appendChild(p)
 const input = document.createElement("input")
 input.placeholder = "Loading articles..."
@@ -74,7 +74,7 @@ center.appendChild(input)
 const select = document.createElement("select")
 const option = document.createElement("option")
 select.appendChild(option)
-option.innerText = "Online articles will appear here"
+option.innerText = "Online pages will appear here"
 center.appendChild(select);
 (async function() {
 	const onlineArticles = await new Promise(function(res, rej) {
