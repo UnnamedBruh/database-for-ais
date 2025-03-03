@@ -45,12 +45,13 @@ async function transitions(json, f) {
 								} else {
 									element.textContent += e[index]
 								}
-            							requestAnimationFrame(() => animateText(index + 1))
 							} else {
 								resolve()
 								break
 							}
+							index++
 						}
+						requestAnimationFrame(() => animateText(index + 4))
 					}
 					animateText(0)
 				})
