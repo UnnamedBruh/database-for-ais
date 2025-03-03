@@ -100,11 +100,19 @@ center.appendChild(select);
 				clearInterval(anim);
 			}, 1000)
 			p.innerText = "Select an article to view it below"
-			onlineArticles.pages.filter(item => item.includes(event.target.value.toLowerCase())).forEach(function(item) {
-				const option = document.createElement("option")
-				option.innerText = item
-				select.appendChild(option)
-			})
+			if (event.target.value === "") {
+				onlineArticles.pages.forEach(function(item) {
+					const option = document.createElement("option")
+					option.innerText = item
+					select.appendChild(option)
+				})
+			} else {
+				onlineArticles.pages.filter(item => item.includes(event.target.value.toLowerCase())).forEach(function(item) {
+					const option = document.createElement("option")
+					option.innerText = item
+					select.appendChild(option)
+				})
+			}
 			select.addEventListener("input", function(u) {
 				p.style.opacity = "1"
 				select.style.opacity = "1"
