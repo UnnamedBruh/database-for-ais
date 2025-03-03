@@ -41,12 +41,10 @@ async function transitions(json, f) {
 								document.body.appendChild(br)
 								element = document.createElement("a")
 								document.body.appendChild(element)
-							} else if (e[index] === " ") {
-								element.innerText += e[index] + e[index + 1]
 							} else {
-								element.innerText += e[index]
+								element.textContent += e[index]
 							}
-            						requestAnimationFrame(() => animateText(index + 1 + (e[index] === " " ? 1 : 0)))
+            						requestAnimationFrame(() => animateText(index + 1))
 						} else {
 							resolve()
 						}
@@ -54,7 +52,7 @@ async function transitions(json, f) {
 					animateText(0)
 				})
 			} else {
-				element.innerText = e
+				element.textContent = e
 			}
 		}
 		i++
@@ -89,11 +87,13 @@ center.appendChild(select);
 	input.addEventListener("keydown", function(event) {
 		if (event.key == "Enter") {
 			input.style.opacity = "1"
-			setInterval(function() {
+			input.disabled = true
+			const anim = setInterval(function() {
 				input.style.opacity = String(parseFloat(input.style.opacity) - 0.1)
 			}, 100)
 			setTimeout(function() {
 				input.remove()
+				clearInterval(anim);
 			}, 1000)
 			p.innerText = "Select an article to view it below"
 			onlineArticles.pages.filter(item => item.includes(event.target.value.toLowerCase())).forEach(function(item) {
@@ -104,14 +104,15 @@ center.appendChild(select);
 			select.addEventListener("input", function(u) {
 				p.style.opacity = "1"
 				select.style.opacity = "1"
-				setInterval(function() {
+				const int = setInterval(function() {
 					p.style.opacity = String(parseFloat(p.style.opacity) - 0.1)
 					select.style.opacity = String(parseFloat(select.style.opacity) - 0.1)
 				}, 100)
 				setTimeout(function() {
 					p.remove()
 					select.remove()
-					transitions(onlineArticles.information[u.target.value], false)
+					clearInterval(int);
+					transitions(onlineArticles.information[u.target.value], true)
 				}, 1000)
 			})
 		}
