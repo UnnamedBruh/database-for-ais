@@ -51,7 +51,7 @@ async function transitions(json, f) {
 							}
 							index++
 						}
-						requestAnimationFrame(() => animateText(index + 4))
+						requestAnimationFrame(() => animateText(index))
 					}
 					animateText(0)
 				})
