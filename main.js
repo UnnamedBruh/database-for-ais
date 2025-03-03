@@ -35,18 +35,21 @@ async function transitions(json, f) {
 			if (!f) {
 				await new Promise((resolve) => {
 					function animateText(index) {
-						if (index < e.length) {
-							if (e[index] === "\n") {
-								const br = document.createElement("br")
-								document.body.appendChild(br)
-								element = document.createElement("a")
-								document.body.appendChild(element)
+						for (let i = 0; i < 4; i++) {
+							if (index < e.length) {
+								if (e[index] === "\n") {
+									const br = document.createElement("br")
+									document.body.appendChild(br)
+									element = document.createElement("a")
+									document.body.appendChild(element)
+								} else {
+									element.textContent += e[index]
+								}
+            							requestAnimationFrame(() => animateText(index + 1))
 							} else {
-								element.textContent += e[index]
+								resolve()
+								break
 							}
-            						requestAnimationFrame(() => animateText(index + 1))
-						} else {
-							resolve()
 						}
 					}
 					animateText(0)
@@ -112,7 +115,7 @@ center.appendChild(select);
 					p.remove()
 					select.remove()
 					clearInterval(int);
-					transitions(onlineArticles.information[u.target.value], true)
+					transitions(onlineArticles.information[u.target.value], false)
 				}, 1000)
 			})
 		}
